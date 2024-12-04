@@ -6,22 +6,47 @@
     <title>Document</title>
 </head>
 <body>
+<button onclick="objclose()"> Saved</button>
+
     <script>
 
+        setTimeout(function(){
+            alert("Refresh your page ")
+        },2500)
+        
+
     function objAlert(){
+        alert("Save Success")
 
     }
 
     function objConfirm(){
+        var result = confirm("Do you Delete thia data ")
+        
+        if(result=true){
+            document.write("Your data is delete");
 
-    }
-    function objOpen(){
+        }
+        
 
     }
 
     function objPromot(){
+       let Name=prompt("Write Your Name:" )
+       document.write(Name)
+
+}
+    function objOpen(){
+        open("https://web.whatsapp.com/");
 
     }
+
+    function objclose(){
+        close();
+
+}
+
+    
     </script>
 </body>
 </html>
