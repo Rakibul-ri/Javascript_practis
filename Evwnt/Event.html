@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" onchange="MyEvents('Change hyece')"><br>
+    <input type="text" onkeyup="MyEvents('up')"><br>
+    <input type="text" onkeydown="MyEvents('Down')"><br>
+    <button onclick="MyEvents('click hoyce')">Click Here </button>
+    <button onmouseover="MyEvents('over')">Click Here </button>
+    <button onmouseout="MyEvents('out')">Click Here </button>
+
+    <script>
+        function MyEvents(msg){
+            console.log(msg)
+        }
+    </script>
+</body>
+</html>
