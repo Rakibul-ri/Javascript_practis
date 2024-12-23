@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <label for="">Nunber-1</label>
+    <input id="num-1" ><br>
+
+    <label for="">Nunber-2</label>
+    <input id="Num-2" ><br>
+
+    <button onclick="AddTwoNumber()" >Add</button>
+
+
+    <script>
+        function AddTwoNumber(){
+            let x = document.getElementById('num1').value;
+            let y = document.getElementById('num2').value;
+
+            let Result = parseFloat(x)+parseFloat(y);
+
+        alert(Result);
+        }
+
+    </script>
+
+</body>
+</html>
