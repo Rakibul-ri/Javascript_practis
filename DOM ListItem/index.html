@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="MyItem"></ul><br>
+    <input id="MyInput"><br>
+    <button onclick="AddItem()">Add</button>
+
+
+    <script>
+        function AddItem(){
+
+            var Itemvalue = document.getElementById('MyInput').value;
+
+            var ListItem = document.createElement('li');
+            ListItem.innerHTML=Itemvalue;
+
+            var MyItem = document.getElementById('MyItem');
+            MyItem.appendChild(ListItem)
+
+
+        }
+
+
+    </script>
+</body>
+</html>
